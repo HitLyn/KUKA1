@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find tams_lwr_wsg50_moveit)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <node name="runKUKA_actionlib_yuchen" pkg="agent_ros_robot" type="runKUKA_actionlib_V2" respawn="false" output="screen">
+    <rosparam command="load" file="$(find tams_lwr_wsg50_moveit)/config/kinematics.yaml"/>
+  </node>
+</launch>

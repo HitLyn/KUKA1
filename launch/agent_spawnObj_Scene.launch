@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="spawnObj_Scene" pkg="agent_ros_robot" type="spawnObj_Scene" respawn="false" output="screen"/>
+
+</launch>
